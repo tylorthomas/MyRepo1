@@ -10,3 +10,7 @@ required features for capstone
 Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
 Create a function that accepts two or more input parameters and returns a value that is calculated or determined by the inputs.  Basic math 
 Retrieve data from a third-party API and use it to display something within your app. The API I am using is 'https://www.dnd5eapi.co/api/spells'
+
+## how to run
+
+Use the live server VScode extensions
