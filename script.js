@@ -2,9 +2,9 @@
 const apiUrl = 'https://www.dnd5eapi.co/api/spells';
 
 // Function to fetch spells from the API
-async function fetchSpells() {
+async function fetchSpells(url = apiUrl) {
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch(url);
         const data = await response.json();
         return data.results; // This will contain the list of spells
     } catch (error) {
@@ -26,9 +26,9 @@ async function populateSpellSelector() {
 }
 
 // Fetch spell details from the API
-async function getSpellDetails(spellIndex) {
+async function getSpellDetails(spellIndex, url = apiUrl) {
     try {
-        const response = await fetch(`${apiUrl}/${spellIndex}`);
+        const response = await fetch(`${url}/${spellIndex}`);
         const spell = await response.json();
         return spell;
     } catch (error) {
